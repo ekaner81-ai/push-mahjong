@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account & Data Deletion - Push Mahjong</title>
+    <style>
+        :root {
+            --bg: #030712;
+            --card-bg: #0f172a;
+            --gold: #f59e0b;
+            --red: #ef4444;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 40px 30px;
+        }
+        h1 {
+            color: var(--gold);
+            font-size: 28px;
+            margin-bottom: 8px;
+            font-weight: 900;
+        }
+        .desc {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+        .lang-switch {
+            display: inline-flex;
+            gap: 12px;
+            margin-bottom: 24px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px 12px;
+            border-radius: 12px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+        .card h2 {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card p, .card li {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .btn-mail {
+            display: inline-block;
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: #ffffff;
+            font-weight: 800;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .btn-mail:hover {
+            opacity: 0.9;
+        }
+        a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#en">🇬🇧 English</a> | <a href="#tr">🇹🇷 Türkçe</a>
+        </div>
+
+        <!-- ENGLISH SECTION -->
+        <section id="en">
+            <h1>Account & Data Deletion Policy</h1>
+            <p class="desc">Learn how to permanently delete your Push Mahjong user account and all associated cloud data.</p>
+
+            <div class="card">
+                <h2>📱 Method 1: Instant In-App Deletion</h2>
+                <p>You can instantly and permanently delete your account directly from within the Push Mahjong mobile app:</p>
+                <ul>
+                    <li>Open <strong>Push Mahjong</strong> on your device.</li>
+                    <li>Tap the <strong>Settings (⚙️)</strong> gear icon in the top right of the Main Menu.</li>
+                    <li>Scroll to the bottom and tap <strong>"🗑️ Delete Account & Data"</strong> (Hesabımı ve Verilerimi Sil).</li>
+                    <li>Confirm the prompt. Your user profile, level progress, XP, coins, match statistics, and friend relationships will be permanently erased from our Firebase servers immediately.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🌐 Method 2: Web Deletion Request (Email)</h2>
+                <p>If you have uninstalled the app or cannot access your device, you can request account deletion by contacting us via email:</p>
+                <ul>
+                    <li>Send an email to: <a href="mailto:ekaner81@gmail.com"><strong>ekaner81@gmail.com</strong></a></li>
+                    <li>Subject line: <strong>"Push Mahjong - Account Deletion Request"</strong></li>
+                    <li>Include the email address associated with your Google or Facebook account used in the game.</li>
+                    <li>We will process and verify your request within <strong>24 to 48 hours</strong>, permanently purging all associated records from our Firebase Firestore database.</li>
+                </ul>
+                <a href="mailto:ekaner81@gmail.com?subject=Push%20Mahjong%20-%20Account%20Deletion%20Request&body=Please%20delete%20my%20Push%20Mahjong%20account%20and%20all%20associated%20data.%0A%0AMy%20registered%20email%3A%20" class="btn-mail">
+                    ✉️ Send Account Deletion Request
+                </a>
+            </div>
+
+            <div class="card">
+                <h2>🛡️ What Data Gets Deleted?</h2>
+                <p>Upon account deletion, the following data is permanently purged and cannot be recovered:</p>
+                <ul>
+                    <li>User ID, Display Name, and Email Address</li>
+                    <li>Player Level, XP, and Coin balances</li>
+                    <li>All Online & Bot match history (Wins, Losses, Total Games)</li>
+                    <li>Friend connections and pending table invitations</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr style="border:0; border-top: 1px solid var(--border); margin: 40px 0;">
+
+        <!-- TURKISH SECTION -->
+        <section id="tr">
+            <h1>Hesap ve Veri Silme Politikası (Türkçe)</h1>
+            <p class="desc">Push Mahjong kullanıcı hesabınızı ve tüm bulut verilerinizi nasıl kalıcı olarak silebileceğinizi öğrenin.</p>
+
+            <div class="card">
+                <h2>📱 1. Yöntem: Oyun İçi Anında Silme</h2>
+                <p>Hesabınızı doğrudan oyun içinden saniyeler içinde kalıcı olarak silebilirsiniz:</p>
+                <ul>
+                    <li>Cihazınızda <strong>Push Mahjong</strong> oyununu açın.</li>
+                    <li>Ana menünün sağ üst köşesindeki <strong>Ayarlar (⚙️)</strong> butonuna dokunun.</li>
+                    <li>En altta yer alan <strong>"🗑️ Hesabımı ve Verilerimi Sil"</strong> butonuna tıklayın.</li>
+                    <li>Onay kutusunda onaylayın. Profiliniz, seviyeniz, XP puanlarınız, galibiyet/mağlubiyet istatistikleriniz ve arkadaş bağlantılarınız anında Google Firebase sunucularımızdan kalıcı olarak silinecektir.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🌐 2. Yöntem: Web Üzerinden E-Posta ile Talep</h2>
+                <p>Oyunu sildiyseniz veya cihazınıza erişemiyorsanız, e-posta göndererek silme talebinde bulunabilirsiniz:</p>
+                <ul>
+                    <li>E-posta adresi: <a href="mailto:ekaner81@gmail.com"><strong>ekaner81@gmail.com</strong></a></li>
+                    <li>Konu başlığı: <strong>"Push Mahjong - Hesap Silme Talebi"</strong></li>
+                    <li>Oyunda kullandığınız Google veya Facebook hesabınıza bağlı e-posta adresini belirtin.</li>
+                    <li>Talebiniz <strong>24-48 saat içinde</strong> incelenerek ilgili tüm verileriniz Firebase Firestore veritabanımızdan kalıcı olarak temizlenecektir.</li>
+                </ul>
+                <a href="mailto:ekaner81@gmail.com?subject=Push%20Mahjong%20-%20Hesap%20Silme%20Talebi&body=Lutfen%20Push%20Mahjong%20hesabimi%20ve%20verilerimi%20siliniz.%0A%0AKayitli%20E-posta%20Adresim%3A%20" class="btn-mail">
+                    ✉️ Hesap Silme Talebi Gönder
+                </a>
+            </div>
+
+            <div class="card">
+                <h2>🛡️ Hangi Veriler Silinir?</h2>
+                <p>Hesap silme işlemi tamamlandığında aşağıdaki veriler kalıcı olarak silinir ve geri getirilemez:</p>
+                <ul>
+                    <li>Kullanıcı ID, Oyuncu Adı ve E-posta Adresi</li>
+                    <li>Oyuncu Seviyesi, XP ve Altın bakiyesi</li>
+                    <li>Tüm Online ve Bot maç geçmişi (Galibiyet, Mağlubiyet, Toplam Maç)</li>
+                    <li>Arkadaşlık bağlantıları ve masa davetleri</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><a href="index.html">← Return to Push Mahjong Home</a> • <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
