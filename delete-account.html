@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account & Data Deletion - Push Mahjong</title>
+    <meta name="description" content="Push Mahjong Account and Data Deletion Instructions - How to permanently delete your account and all associated data.">
     <style>
         :root {
             --bg: #030712;
@@ -130,7 +131,7 @@
                 <ul>
                     <li>Send an email to: <a href="mailto:ekaner81@gmail.com"><strong>ekaner81@gmail.com</strong></a></li>
                     <li>Subject line: <strong>"Push Mahjong - Account Deletion Request"</strong></li>
-                    <li>Include the email address associated with your Google or Facebook account used in the game.</li>
+                    <li>Include the <strong>email address</strong> registered to your Push Mahjong account (Email/Password or Google).</li>
                     <li>We will process and verify your request within <strong>24 to 48 hours</strong>, permanently purging all associated records from our Firebase Firestore database.</li>
                 </ul>
                 <a href="mailto:ekaner81@gmail.com?subject=Push%20Mahjong%20-%20Account%20Deletion%20Request&body=Please%20delete%20my%20Push%20Mahjong%20account%20and%20all%20associated%20data.%0A%0AMy%20registered%20email%3A%20" class="btn-mail">
@@ -142,11 +143,14 @@
                 <h2>🛡️ What Data Gets Deleted?</h2>
                 <p>Upon account deletion, the following data is permanently purged and cannot be recovered:</p>
                 <ul>
-                    <li>User ID, Display Name, and Email Address</li>
+                    <li>User ID, Username, Display Name, and Email Address</li>
+                    <li>Firebase Authentication credentials (password hash is deleted)</li>
                     <li>Player Level, XP, and Coin balances</li>
                     <li>All Online & Bot match history (Wins, Losses, Total Games)</li>
                     <li>Friend connections and pending table invitations</li>
+                    <li>All Firestore cloud documents associated with your account</li>
                 </ul>
+                <p style="margin-top:10px;"><strong>Note:</strong> Guest accounts do not have a cloud profile. Clearing app data / reinstalling automatically removes a guest session.</p>
             </div>
         </section>
 
@@ -174,7 +178,7 @@
                 <ul>
                     <li>E-posta adresi: <a href="mailto:ekaner81@gmail.com"><strong>ekaner81@gmail.com</strong></a></li>
                     <li>Konu başlığı: <strong>"Push Mahjong - Hesap Silme Talebi"</strong></li>
-                    <li>Oyunda kullandığınız Google veya Facebook hesabınıza bağlı e-posta adresini belirtin.</li>
+                    <li>Push Mahjong hesabınıza kayıtlı <strong>e-posta adresinizi</strong> (E-posta/Şifre veya Google) belirtin.</li>
                     <li>Talebiniz <strong>24-48 saat içinde</strong> incelenerek ilgili tüm verileriniz Firebase Firestore veritabanımızdan kalıcı olarak temizlenecektir.</li>
                 </ul>
                 <a href="mailto:ekaner81@gmail.com?subject=Push%20Mahjong%20-%20Hesap%20Silme%20Talebi&body=Lutfen%20Push%20Mahjong%20hesabimi%20ve%20verilerimi%20siliniz.%0A%0AKayitli%20E-posta%20Adresim%3A%20" class="btn-mail">
@@ -186,17 +190,20 @@
                 <h2>🛡️ Hangi Veriler Silinir?</h2>
                 <p>Hesap silme işlemi tamamlandığında aşağıdaki veriler kalıcı olarak silinir ve geri getirilemez:</p>
                 <ul>
-                    <li>Kullanıcı ID, Oyuncu Adı ve E-posta Adresi</li>
+                    <li>Kullanıcı ID, Kullanıcı Adı, Oyuncu Adı ve E-posta Adresi</li>
+                    <li>Firebase Authentication kimlik bilgileri (şifre hash'i silinir)</li>
                     <li>Oyuncu Seviyesi, XP ve Altın bakiyesi</li>
                     <li>Tüm Online ve Bot maç geçmişi (Galibiyet, Mağlubiyet, Toplam Maç)</li>
                     <li>Arkadaşlık bağlantıları ve masa davetleri</li>
+                    <li>Hesabınıza ait tüm Firestore bulut dökümanları</li>
                 </ul>
+                <p style="margin-top:10px;"><strong>Not:</strong> Misafir hesaplarının bulut profili yoktur. Uygulamanın kaldırılıp yeniden yüklenmesi misafir oturumunu otomatik olarak sona erdirir.</p>
             </div>
         </section>
     </div>
 
     <footer>
-        <p><a href="index.html">← Return to Push Mahjong Home</a> • <a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="index.html">← Push Mahjong Ana Sayfa / Home</a> • <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a></p>
     </footer>
 </body>
 </html>
